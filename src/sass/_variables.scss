@@ -1,0 +1,23 @@
+// Colors
+$highlight-background: #f7f7f7;
+$default-background: #ffffff;
+$default-font-color: #707070;
+$secondary-font-color: #888888;
+$radio-background: #0e7f61;
+$button-primary: #ffffff;
+$button-secondary: #bc2f6c;
+$status-active: #0e7f61;
+$status-inative: #bc2f6c;
+$table-header: #43a4e6;
+$table-row-primary: #ffffff;
+$table-row-secondary: #ededed;
+$highlight-link: #ededed;
+
+// Named Breakpoint Values
+$breakpoints: (
+  small: 320px,
+  medium: 640px,
+  large: 1024px,
+  x-large: 1600px,
+  xx-large: 2800px,
+);

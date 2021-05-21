@@ -1,0 +1,42 @@
+@import "src/sass/_variables.scss";
+
+.menu {
+  margin: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+}
+.menu__logo {
+  margin-top: 25px;
+}
+.menu h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: $default-font-color;
+  margin-top: 70px;
+}
+.menu__list li {
+  width: 90%;
+}
+.menu__list li a {
+  text-decoration: none;
+  color: $default-font-color;
+  font-weight: bold;
+  font-size: 19px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  padding: 20px;
+}
+.menu__list li a img {
+  width: 25px;
+  margin-right: 25px;
+  filter: opacity(50%);
+}
+.menu__list li a:hover {
+  background: $highlight-link;
+  border-radius: 10px;
+}

@@ -1,0 +1,31 @@
+@import "_reset";
+@import "_mixins";
+@import "_variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  // Mobile-First Styles
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Roboto";
+  text-align: center;
+
+  /*@include mp(large) {
+    // background-color: red;
+  }*/
+}
+
+app-menu {
+  flex: 1;
+  order: 1;
+  @include mp(large) {
+  }
+}
+app-vehicle {
+  order: 2;
+}

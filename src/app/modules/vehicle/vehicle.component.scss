@@ -1,0 +1,65 @@
+@import "src/sass/_variables.scss";
+@import "src/sass/_mixins.scss";
+
+.vehicle {
+  margin: 50px 20px;
+  padding: 15px;
+  background: $highlight-background;
+  color: $default-font-color;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  flex: 3;
+  order: 2;
+  @include mp(large) {
+    padding: 30px;
+  }
+}
+.vehicle h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0px;
+}
+.vehicle p {
+  margin: 20px 0px;
+  font-size: 14px;
+  color: $secondary-font-color;
+}
+.vehicle__list {
+  background: $table-row-primary;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 10px;
+}
+.vehicle__list th {
+  background-color: $table-header;
+  color: #fff;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.vehicle__list tr {
+  font-size: 13px;
+}
+.vehicle__list th,
+.vehicle__list td {
+  text-align: left;
+  padding: 8px;
+}
+.vehicle__list > tbody > tr:nth-child(odd) > td,
+.vehicle__list > tbody > tr:nth-child(odd) > th {
+  background-color: $table-row-secondary; // Choose your own color here
+}
+
+.table-round-corner {
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  border-collapse: separate;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
